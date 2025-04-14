@@ -1,4 +1,8 @@
 import streamlit as st
+
+SENDER_EMAIL = st.secrets["email"]
+APP_PASSWORD = st.secrets["app_password"]
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
